@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<style type="text/css">
+    h1 {
+        font-size: 30px;
+    }
+    body{
+        background-image: url("BGImage.jpg");
+    }
+    table {
+        border-style: solid;
+        border-width: 3px;
+        border-left-width: 3px;
+        border-right-width: 3px;
+        border-spacing: 100px 150px;
+        border-color: blue;
+    }
+    </style>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li style="font-size: 20px"><a href="home.html">Home</a></li>
+            <li style="font-size: 20px"><a href="About.html">About</a></li>
+            <li style="font-size: 20px" class="active"><a href="#">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
+        </ul>
+    </div>
+</nav>
+<h1 style="text-align: center">Contact Details</h1>
+<div style="text-align: center">
+<table align="center">
+<tr>
+    <td ><img height="250px" src="Anvesh.jpg"></td>
+    <td><img height="250px" src="me.jpg"></td>
+</tr>
+<tr>
+    <td style="font-size: 30px"><strong>Anvesh</strong></td>
+    <td style="font-size: 30px"><strong>Prakash</strong></td>
+</tr>
+    <tr>
+        <td style="font-size: 30px">amngv@umkc.edu</td>
+        <br>
+        <td style="font-size: 30px">jrhmb@umkc.edu</td>
+    </tr>
+</table>
+    <br>
+<a href="https://github.com/amngb95/CS5551_Team6_2_labAssignments">
+    <img src="GITHUB.png"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Speech API Tutorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<style type="text/css">
+    body{
+        background-image: url("BGImage.jpg");
+        color: black;
+        font-family: sans-serif;
+    }
+</style>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li style="font-size: 20px" ><a href="home.html">Home</a></li>
+            <li style="font-size: 20px" class="active"><a href="#">About</a></li>
+            <li style="font-size: 20px"><a href="Contact.html">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
+        </ul>
+    </div>
+</nav>
+<h1 style="text-align: center">About MashUp Application</h1>
+<div align="center">
+<p>The mashUp Application what we did is give the any name in the Input text it
+   will give the details like name,description and wiki link for that particular input
+</p>
+</div>
+</body>
+</html>
