@@ -1,0 +1,43 @@
+<style type="text/css">
+    body{
+        background-image: url("BGImage.jpg");
+        color: black;
+        font-family: sans-serif;
+    }
+</style>
+<h1 style="text-align: center">Registration page</h1>
+<div class="Container" style="text-align: center">
+    <p>Please fill the following Details</p>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="FirstName"><strong>FirstName:</strong></label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="FirstName" placeholder="Enter FirstName" required/>
+            </div>
+        </div>
+        <br>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="LastName"><strong>LastName:</strong></label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="LastName" placeholder="Enter LastName" required/>
+            </div>
+        </div>
+        <br>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="UserName"><strong>UserName:</strong></label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="UserName" placeholder="Enter UserName" required/>
+            </div>
+        </div>
+        <br>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd"><strong>Password:</strong></label>
+            <div class="col-sm-4">
+                <input type="password" class="form-control" id="pwd" placeholder="Enter Password" required/>
+            </div>
+        </div>
+        <div style="margin-top: 10px">
+        <button type="button" ng-click="saveDetails()" class="registerbtn" >Register</button>
+        </div>
+    </form>
+</div>

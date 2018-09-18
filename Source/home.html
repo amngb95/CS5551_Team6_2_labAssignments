@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<style type="text/css">
+    body{
+        background-image: url("BGImage.jpg");
+        color: black;
+        font-family: sans-serif;
+    }
+</style>
+<script>
+    function upgrade() {
+        alert('Please use Google Chrome for best experience');
+    }
+    function record(){
+        if (!(window.webkitSpeechRecognition) && !(window.speechRecognition)) {
+            upgrade();
+        } else {
+            var recognizing,
+                transcription = document.getElementById('speech'),
+                interim_span = document.getElementById('interim');
+            interim_span.style.opacity = '0.5';
+
+            function reset() {
+                recognizing = false;
+                interim_span.innerHTML = '';
+                transcription.innerHTML = '';
+                speech.start();
+            }
+
+            var speech = new webkitSpeechRecognition() || speechRecognition();
+            speech.continuous = true;
+            speech.interimResults = true;
+            speech.lang = 'en-US'; // check google web speech example source for more lanuages
+            speech.start(); //enables recognition on default
+            speech.onstart = function () {
+                // When recognition begins
+                recognizing = true;
+            };
+            speech.onresult = function (event) {
+                // When recognition produces result
+                var interim_transcript = '';
+                var final_transcript = '';
+                // main for loop for final and interim results
+                for (var i = event.resultIndex; i < event.results.length; ++i) {
+                    if (event.results[i].isFinal) {
+                        final_transcript += event.results[i][0].transcript;
+                    } else {
+                        interim_transcript += event.results[i][0].transcript;
+                    }
+                }
+                transcription.innerHTML = final_transcript;
+                interim_span.innerHTML = interim_transcript;
+                document.getElementById('text').value = final_transcript;
+            };
+            speech.onerror = function (event) {
+                // Either 'No-speech' or 'Network connection error'
+                console.error(event.error);
+            };
+            speech.onend = function () {
+                // When recognition ends
+                reset();
+            };
+        }
+    }
+</script>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li style="font-size: 20px" class="active"><a href="#">Home</a></li>
+            <li style="font-size: 20px"><a href="About.html">About</a></li>
+            <li style="font-size: 20px"><a href="Contact.html">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
+        </ul>
+    </div>
+</nav>
+<div ng-app="angularApp" ng-controller="homeCtrl">
+    <div style="font-size: 30px">
+        <p ng-bind="fname"></p>
+    </div>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-sm-2"  for="text">InputText:</label>
+            <div class="col-sm-4">
+                <input type="text" id="text" class="form-control" ng-model="inputText" placeholder="Enter InputText">
+                <a onclick="record()"><img style="margin-top: -55px;margin-left: 101%" height="25px" src="Mic.png"></a>
+            </div>
+        </div>
+    </form>
+    <form class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default" ng-click="getinfo()">getDetails</button>
+        </div>
+    </form>
+    <div style="margin-top: 50px" align="center">
+        <h2 ng-bind="name"></h2>
+         <p ng-bind="description"></p>
+         <p ng-bind="article"></p>
+         <p ng-bind="wiki"></p>
+         <p ng-bind="image"></p>
+    </div>
+</div>
+<span id="speech"></span>
+<span id="interim"></span>
+</body>
+</html>
