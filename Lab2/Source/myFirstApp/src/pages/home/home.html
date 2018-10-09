@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+    <ion-title style="text-align: right">LogOut</ion-title>
+    <ion-buttons end>
+      <button (click)="goBack()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<style>
+</style>
+<ion-content padding class="bg">
+  <h2>Welcome to Ionic!</h2>
+  <p>
+    This starter project comes with simple tabs-based layout for apps
+    that are going to primarily use a Tabbed UI.
+  </p>
+  <p>
+    This is Ionic Project created by Anvesh Mandadi
+  </p>
+  <table align="center"cellpadding="8"style="width: 200px;height:125px">
+    <tr>
+      <td><label style="font-size: 15px"><strong>City:</strong></label></td>
+    <td>
+  <input type="text" [(ngModel)]=city></td>
+    </tr>
+    <tr>
+      <td><label style="font-size: 15px"><strong>SearchKeyword:</strong></label></td>
+    <td>
+  <input type="text" [(ngModel)]=searchKeyword></td>
+    </tr>
+  </table>
+  <form align="center">
+  <button ion-button round style="font-size: 15px" (click)="getdetails()">showDetails</button>
+  </form>
+  <h6>The following {{searchKeyword}} are present in {{city}}</h6>
+  <ion-list>
+    <ion-item *ngFor="let restaurent of restaurents">
+      <ion-card>
+        <p>{{restaurent.name}}</p>
+        <p>{{restaurent.location.address}}</p>
+        <p>{{restaurent.location.crossStreet}}</p>
+        <p>{{restaurent.location.city}}</p>
+        <p>{{restaurent.location.country}}</p>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</ion-content>

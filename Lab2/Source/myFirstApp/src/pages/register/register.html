@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Register</ion-title>
+
+  </ion-navbar>
+</ion-header>
+<style>
+  .bg{
+    background-color: white;
+  }
+</style>
+
+<ion-content padding class="bg">
+  <h2 style="text-align: center">Welcome to Register Page Please fill your Details</h2>
+<br>
+  <form align="center">
+      <table align="center" cellpadding="3"style="width: 400px;height:300px"><tr>
+        <td>
+          <label style="font-size: 15px"><strong>FirstName:</strong></label></td>
+        <td>
+      <input type="text" placeholder="Enter FirstName" required></td>
+      </tr>
+        <tr>
+          <td>
+            <label style="font-size: 15px"><strong>LastName:</strong></label></td>
+          <td>
+      <input type="lastname" placeholder="Enter LastName" required></td>
+        </tr>
+        <tr><td>
+      <label style="font-size: 15px"><strong>Emailid:</strong></label></td>
+          <td>
+            <input type="username" placeholder="Enter EmailId" required></td>
+        </tr>
+        <tr><td>
+      <label style="font-size: 15px"><strong>Password:</strong></label></td>
+          <td>
+      <input type="password" placeholder="Enter password" required></td>
+        </tr>
+        <tr>
+          <td>
+      <label style="font-size: 15px"><strong>Confirm Password:</strong></label></td>
+          <td>
+      <input type="password" placeholder="Confirm password" required></td>
+        </tr>
+      </table>
+      <button ion-button round type="Submit" style="font-size: 15px" (click)="signIn()"><strong>Register</strong></button>
+
+  </form>
+
+</ion-content>
