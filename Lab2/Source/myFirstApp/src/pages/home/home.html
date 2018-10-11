@@ -38,11 +38,15 @@
   <ion-list>
     <ion-item *ngFor="let restaurent of restaurents">
       <ion-card>
+        <ion-card-header>
         <p>{{restaurent.name}}</p>
+          <ion-card-header>
+            <ion-card-content>
         <p>{{restaurent.location.address}}</p>
         <p>{{restaurent.location.crossStreet}}</p>
         <p>{{restaurent.location.city}}</p>
         <p>{{restaurent.location.country}}</p>
+            </ion-card-content>
       </ion-card>
     </ion-item>
   </ion-list>

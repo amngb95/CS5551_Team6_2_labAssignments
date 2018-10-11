@@ -1,14 +1,14 @@
 [
   {
-    "plu":"90311017",
-    "name":"Acetaminophen oral",
-    "price":76,
-    "desc":"This drug is used to treat mild to moderate pain (from headaches, menstrual periods, toothaches, backaches, osteoarthritis, or cold/flu aches and pains) and to reduce fever."
+    "plu":"123456",
+    "name":"HP Laptop with intel core i5 generation",
+    "price":660,
+    "desc":"Gaming DDR5 RAM 16GB PC-128000 For x64 PC"
   },
   {
-    "plu":"9780201379624",
-    "name":"captopril oral",
+    "plu":"640509040147",
+    "name":"DELL Laptop with intel core i5 generation",
     "price":200,
-    "desc":"Captopril is used to treat high blood pressure (hypertension)"
+    "desc":"Gaming DDR5 RAM 16GB PC-128111 For x32 PC"
   }
 ]

@@ -15,14 +15,13 @@ export class AboutPage {
     this.dataService.getListDetails()
       .subscribe((response)=> {
         this.products = response;
-        console.log("at barcoed constructor");
         console.log(this.products);
       });
   }
   clickCamera(){
     this.selectedProduct = {};
     this.barcodeScanner.scan().then((barcodeData) => {
-      console.log("scanned product");
+      console.log("product is scanned");
       console.log(barcodeData.text);
       this.selectedProduct = this.products.find(product => product.plu === barcodeData.text);
       if(this.selectedProduct !== undefined) {

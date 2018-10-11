@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      QR Scanner
+      Barcode Scanner
     </ion-title>
     <ion-buttons end>
       <button ion-button clear icon-only (click)="clickCamera()">
@@ -19,6 +19,7 @@
     <ion-card-content>
       <h5>Price: $ {{selectedProduct.price}}</h5>
       Description : {{selectedProduct.desc}}
+      Barcode number : {{selectedProduct.plu}}
     </ion-card-content>
   </ion-card>
 </ion-content>
