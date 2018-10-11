@@ -1,0 +1,14 @@
+[
+  {
+    "plu":"123456",
+    "name":"HP Laptop with intel core i5 generation",
+    "price":660,
+    "desc":"Gaming DDR5 RAM 16GB PC-128000 For x64 PC"
+  },
+  {
+    "plu":"640509040147",
+    "name":"DELL Laptop with intel core i5 generation",
+    "price":200,
+    "desc":"Gaming DDR5 RAM 16GB PC-128111 For x32 PC"
+  }
+]

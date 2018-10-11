@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Barcode Scanner
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button clear icon-only (click)="openBarcoder()">
+        <ion-icon name="barcode" md="md-barcode"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngIf="productFound">
+    <ion-card-header>
+      {{selectedProduct.name}}
+    </ion-card-header>
+    <ion-card-content>
+      <h5>Price: $ {{selectedProduct.price}}</h5>
+      Description : {{selectedProduct.desc}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

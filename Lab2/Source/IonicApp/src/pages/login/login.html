@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>login</ion-title>
+  </ion-navbar>
+</ion-header>
+<style>
+  .bg{
+    background-color: azure;
+  }
+</style>
+
+<ion-content padding class="bg">
+  <h2 align="center">Welcome to login page Please Login</h2>
+  <br>
+  <table align="center"cellpadding="8"style="width: 400px;height:125px">
+    <tr>
+     <td> <label style="font-size: 15px"><strong>UserName:</strong></label></td>
+      <td> <input  [(ngModel)]="username" type="text"></td>
+    </tr>
+    <tr>
+    <td><label style="font-size: 15px"><strong>Password:</strong></label></td>
+    <td><input  [(ngModel)]="password" type="password"></td>
+    </tr>
+  </table>
+  <form align="center">
+       <button ion-button round style="font-size: 15px" (click)="home()">LogIn</button>
+  <br>
+    <br>
+      New User?<a style="font-size: 25px;font-color:black" (click)="reg()">SignUp</a>
+  </form>
+</ion-content>
