@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {LoginPage} from "../login/login";
-import { HttpClient,HttpResponse } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'page-home',
@@ -10,7 +10,7 @@ import { HttpClient,HttpResponse } from '@angular/common/http';
 export class HomePage {
   private city: any;
   private searchKeyword: any;
-  private condition: any;
+  //private condition: any;
   public restaurents: any;
   constructor(public navCtrl: NavController,private http:HttpClient) {
 

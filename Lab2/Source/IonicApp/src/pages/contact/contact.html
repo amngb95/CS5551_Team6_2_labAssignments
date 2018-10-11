@@ -1,17 +1,25 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Contact
-    </ion-title>
+    <h3 class="titleicon" style="display:inline-block">Google Vision API</h3>
+    <ion-buttons end>
+      <button (click)="logout()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+<ion-content padding>
+
+
+  <button  ion-button color="tertiary" (click)="Capture()">Take Picture</button>
+  <div *ngIf="base64Image">
+    <br/>
+    <strong align="center">Picture Taken</strong>
+    <img [src]="base64Image" />
+    <br/><br/>
+    <p *ngIf="visionResult">Text from the Image is : <strong> {{visionResult}}</strong></p>
+  </div>
+
+
 </ion-content>
