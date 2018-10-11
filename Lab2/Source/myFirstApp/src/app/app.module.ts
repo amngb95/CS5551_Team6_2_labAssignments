@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
+import {QRScanner} from '@ionic-native/qr-scanner';
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
@@ -45,6 +46,7 @@ import { LocalNotifications } from '@ionic-native/local-notifications';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     LocalNotifications,
+    QRScanner
   ]
 })
 export class AppModule {}

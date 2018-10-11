@@ -1,10 +1,17 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      QR Scanner
     </ion-title>
+    <ion-buttons end>
+      <button ion-button clear icon-only (click)="clickCamera()">
+        <ion-icon name="barcode" md="md-barcode"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
+
+
 
 <ion-content padding>
 
