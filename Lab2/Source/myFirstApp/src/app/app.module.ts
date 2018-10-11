@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import {QRScanner} from '@ionic-native/qr-scanner';
 import { Toast } from '@ionic-native/toast';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
@@ -48,9 +48,9 @@ import { DataServiceProvider } from '../providers/data-service/data-service';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     LocalNotifications,
-    QRScanner,
     DataServiceProvider,
-    Toast
+    Toast,
+    BarcodeScanner
   ]
 })
 export class AppModule {}

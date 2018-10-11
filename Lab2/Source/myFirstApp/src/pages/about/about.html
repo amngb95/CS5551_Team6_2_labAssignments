@@ -12,5 +12,13 @@
 </ion-header>
 
 <ion-content padding>
-
+  <ion-card *ngIf="productFound">
+    <ion-card-header>
+      {{selectedProduct.name}}
+    </ion-card-header>
+    <ion-card-content>
+      <h5>Price: $ {{selectedProduct.price}}</h5>
+      Description : {{selectedProduct.desc}}
+    </ion-card-content>
+  </ion-card>
 </ion-content>
