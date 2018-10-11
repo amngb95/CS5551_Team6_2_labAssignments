@@ -1,0 +1,14 @@
+[
+  {
+    "plu":"90311017",
+    "name":"Acetaminophen oral",
+    "price":76,
+    "desc":"This drug is used to treat mild to moderate pain (from headaches, menstrual periods, toothaches, backaches, osteoarthritis, or cold/flu aches and pains) and to reduce fever."
+  },
+  {
+    "plu":"9780201379624",
+    "name":"captopril oral",
+    "price":200,
+    "desc":"Captopril is used to treat high blood pressure (hypertension)"
+  }
+]
