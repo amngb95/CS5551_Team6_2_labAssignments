@@ -21,7 +21,8 @@ module.exports = function(config) {
 	  '*.js',
 	  'www/js/*.js',
 	  'www/lib/ionic/js/ionic-angular.min.js',
-      'src/pages/login/logintest.js'
+      'src/pages/login/logintest.js',
+      'src/pages/home/homeTest.js'
     ],
 
 
