@@ -10,8 +10,12 @@
     </ion-buttons>
   </ion-navbar>
 </ion-header>
-
-<ion-content padding>
+<style>
+  .bg{
+    background-color: azure;
+  }
+</style>
+<ion-content padding class="bg">
   <ion-card *ngIf="productFound">
     <ion-card-header>
       {{selectedProduct.name}}

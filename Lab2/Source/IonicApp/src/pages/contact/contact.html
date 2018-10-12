@@ -8,10 +8,12 @@
     </ion-buttons>
   </ion-navbar>
 </ion-header>
-
-<ion-content padding>
-
-
+<style>
+  .bg{
+    background-color: azure;
+  }
+</style>
+<ion-content padding class="bg">
   <button  ion-button color="tertiary" (click)="Capture()">Take Picture</button>
   <div *ngIf="base64Image">
     <br/>
