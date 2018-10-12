@@ -1,4 +1,5 @@
 // Karma configuration
+// Generated on Fri Oct 12 2018 12:31:54 GMT-0500 (Central Daylight Time)
 
 module.exports = function(config) {
   config.set({
@@ -13,11 +14,14 @@ module.exports = function(config) {
 
 
     // list of files / patterns to load in the browser
-    // list of files / patterns to load in the browser
     files: [
-      'node_modules/angular/angular.js',
-      'node_modules/angular-mocks/angular-mocks.js',
-      'src/pages/login/login_in.spec.js',
+	'node_modules/angular/angular.js',
+	'node_modules/angular-mocks/angular-mocks.js',
+      'js/*.js',
+	  '*.js',
+	  'www/js/*.js',
+	  'www/lib/ionic/js/ionic-angular.min.js',
+      'src/pages/login/logintest.js'
     ],
 
 
