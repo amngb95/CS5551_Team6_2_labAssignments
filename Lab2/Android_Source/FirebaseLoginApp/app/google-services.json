@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "8557312088",
+    "firebase_url": "https://lab2-login-2d7ba.firebaseio.com",
+    "project_id": "lab2-login-2d7ba",
+    "storage_bucket": "lab2-login-2d7ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8557312088:android:ee0f2390ca730ada",
+        "android_client_info": {
+          "package_name": "com.example.praka.androidlogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8557312088-c68olpjd8miv3025ea1bv3t1hm1k3q6c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHMTVPQjlfkeDhNth0QbKytIrM4YVDQtc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8557312088:android:deaae79cdf056ac3",
+        "android_client_info": {
+          "package_name": "com.firebaseloginapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8557312088-c68olpjd8miv3025ea1bv3t1hm1k3q6c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHMTVPQjlfkeDhNth0QbKytIrM4YVDQtc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

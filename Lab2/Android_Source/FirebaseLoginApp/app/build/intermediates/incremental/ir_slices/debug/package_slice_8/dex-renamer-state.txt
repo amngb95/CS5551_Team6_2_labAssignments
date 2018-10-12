@@ -1,0 +1,4 @@
+#Fri Oct 12 01:37:32 CDT 2018
+base.0=E\:\\Masters In Umkc\\ASE\\Lab 2\\FirebaseLoginApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\9
+path.0=classes.dex
+renamed.0=classes.dex
