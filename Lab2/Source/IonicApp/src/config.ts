@@ -1,1 +1,1 @@
-export var googleCloudVisionAPIKey: "AIzaSyDH7CteeKEUb4tF3OtrWGnNazWtWTPEwPY"
+export var googleCloudVisionAPIKey: "AIzaSyD95vD_GV8ap1h72Y5tvg_N9km4qLsDtLM"
