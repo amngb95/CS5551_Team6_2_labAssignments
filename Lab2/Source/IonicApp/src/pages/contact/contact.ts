@@ -72,7 +72,6 @@ export class ContactPage {
           alert.present();
         }
       }, error => {
-        this.visionResult = "Google Translate Break through language barrie";
         let alert = this.alertCtrl.create({
           title: 'Failure',
           subTitle: error,
