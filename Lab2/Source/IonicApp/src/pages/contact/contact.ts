@@ -55,7 +55,7 @@ export class ContactPage {
       }
 
 
-      this.http.post('https://vision.googleapis.com/v1/images:annotate?key=AIzaSyD95vD_GV8ap1h72Y5tvg_N9km4qLsDtLM', body).pipe(map(res => res.json())).subscribe(data =>
+      this.http.post('https://vision.googleapis.com/v1/images:annotate?key=AIzaSyAi4NP1cNtoWZUm8o77qrT0DCxLRmP-pMA', body).pipe(map(res => res.json())).subscribe(data =>
       {
         console.log(data);
         if(data != null && data != "undefined"

@@ -25,8 +25,6 @@ export class GoogleCloudVisionServiceProvider {
         }
       ]
     }
-
-
     // this.http.post('https://vision.googleapis.com/v1/images:annotate?key=' + environment.googleCloudVisionAPIKey, body).subscribe(result =>{
     // console.log("Result:", JSON.stringify(result))
     // })
