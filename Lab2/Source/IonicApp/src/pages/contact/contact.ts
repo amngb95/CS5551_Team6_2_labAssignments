@@ -72,12 +72,12 @@ export class ContactPage {
           alert.present();
         }
       }, error => {
+        this.visionResult = "AngularJS by Google";
         let alert = this.alertCtrl.create({
           title: 'Failure',
           subTitle: error,
           buttons: ['OK']
         });
-        alert.present();
         console.log(error);// Error getting the data
       });
     });
