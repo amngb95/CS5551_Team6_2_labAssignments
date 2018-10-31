@@ -25,7 +25,6 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
 //Rest API's
 require('./controllers/external/index')(app);
 
