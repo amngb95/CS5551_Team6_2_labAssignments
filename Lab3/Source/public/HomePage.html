@@ -149,17 +149,6 @@
                 })
             }
             $scope.Delete=function(qId){
-                /*var dataParams = {
-                    'userId':$scope.userName,
-                    'questionId' : qId
-                };
-                console.log(dataParams);
-                var config = {
-                    headers : {
-                        'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
-                    }
-                };*//* console.log(dataParams);*/
-
                 var req = $http.delete('/answers/delete?userId='+$scope.userName+'&questionId='+qId).then(function(data,status,header,config){
                     console.log(data);
                     alert("Details are deleted Successfully saved in MongoDB");
@@ -235,15 +224,6 @@
 </div>
     <div id="Contact" style="width: 100%" align="center" class="tabcontent">
     <h1 align="center" style="font-size: 50px">Team Details</h1>
-       <!-- <div style="text-align: center">
-                    <img height="250px" src="../Images/Anvesh.jpg">
-                     <p style="font-size: 25px">ClassId:34</p>
-            <p style="font-size: 25px">amngb@mail.umkc.edu</p>
-                    <img height="250px" src="../Images/Hiresh.jpg">
-            <p style="font-size: 25px">ClassId:17</p>
-            <p style="font-size: 25px">hj7k6@mail.umkc.edu</p>
-        </div>
--->
         <table align="center">
             <tr>
                 <td > <img height="250px" src="Images/Anvesh.jpg"></td>
