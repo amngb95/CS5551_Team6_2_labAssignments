@@ -6,10 +6,14 @@ var logger = require('morgan');
 var cors = require('cors');
 const db = require('mongoose');
 
+const nodemailer = require('nodemailer');
+const xoauth2 = require('xoauth2');
+
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 var bodyParser = require("body-parser");
 var app = express();
+var smtpTransport = require('nodemailer-smtp-transport');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -24,6 +28,34 @@ app.use(cors());
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+var transporter = nodemailer.createTransport(smtpTransport({
+    service: 'gmail',
+    auth: {
+        xoauth2: xoauth2.createXOAuth2Generator({
+            user: 'prakash.ravella@gmail.com',
+            clientId: '25670524651-b4st6u5639f3tc4greigfl6th463lbek.apps.googleusercontent.com',
+            clientSecret: '4LnC0OqzPZpIhCIqcS9eE7wg',
+            refreshToken: '1/SYMrExBfCtX8S0DjdXYFTGQJHc26fevUCGWKLfHgxUE'
+        })
+    }
+}));
+
+var mailOptions = {
+    from: 'prakash ravella<prakash.ravella@gmail.com>',
+    to: 'dinu.mandadi@gmail.com',
+    subject: 'Node Mailer Application Test for Lab3',
+    text: 'This is Sample mail to show the demo for node mailer which is required for Lab Assignment3'
+}
+
+transporter.sendMail(mailOptions, function (err, res) {
+    if(err){
+        console.log(err);
+        console.log('Error');
+    } else {
+        console.log('Email Sent');
+    }
+})
 
 //Rest API's
 require('./controllers/external/index')(app);
@@ -196,4 +228,4 @@ app.delete('/answers/delete',function (req, res) {
         res.render('error');
     });
 
-    module.exports = app;
+module.exports = app;
